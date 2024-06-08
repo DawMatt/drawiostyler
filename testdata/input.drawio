@@ -1,0 +1,28 @@
+<mxfile host="Electron" modified="2024-06-08T01:21:25.321Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.5.1 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="uuGdrXT4CQa_U0n82gia" version="24.5.1" type="device">
+  <diagram name="Page-1" id="IGRijIEaz_LXISFAQLLV">
+    <mxGraphModel dx="1114" dy="878" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <object label="1" id="Box_1">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
+            <mxGeometry x="160" y="200" width="120" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="2" id="Box 2">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" parent="1" vertex="1">
+            <mxGeometry x="510" y="200" width="120" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="3" id="Something Else">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
+            <mxGeometry x="350" y="420" width="120" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="eSM2c6EErZ0h97KHhP3E-5" value="See:&amp;nbsp;https://www.drawio.com/blog/data-driven-diagrams" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="80" y="80" width="670" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
