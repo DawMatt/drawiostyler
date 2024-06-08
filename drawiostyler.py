@@ -58,18 +58,36 @@ def save_drawio(drawio_file, root):
 
 def update_drawio(root, data):
     for row in data:
+        rowkeys = { "id": True }
         for object in root.iter("object"):
             if object.attrib["id"] == row["id"]:
                 for mxCell in object.iter("mxCell"):
                     style = mxCell.attrib.get("style")
                     if style:
                         style = style.split(";")
+                        styledelete = []
+
+                        # Overwrite existing style elements
                         for i in range(len(style)):
                             if "=" not in style[i]:
+                                if len(style[i]) == 0:
+                                    styledelete.append(i)
                                 continue
                             key, value = style[i].split("=")
+                            rowkeys[key] = True
                             if key in row:
                                 style[i] = f"{key}={row[key]}"
+
+                        # Reverse list so deleting doesn't impact ordering
+                        styledelete.reverse()
+                        for i in range(len(styledelete)):
+                            del style[styledelete[i]]
+
+                        # Add new style elements from CSV
+                        for key, value in row.items():
+                            if key in rowkeys and rowkeys[key]:
+                                continue
+                            style.append(f"{key}={value}")
                         mxCell.attrib["style"] = ";".join(style)
     return root
 

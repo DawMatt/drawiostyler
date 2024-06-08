@@ -2,11 +2,25 @@
 
 Draw.io Styler allows you to use data from a CSV to quickly update styles for objects within an existing diagram.
 
-The steps to updating styles are:
+The steps for updating styles are:
 
 1. Prepare the Draw.io file for updating
 2. Prepare the CSV file with the new style values
 3. Use `drawiostyler` Python script to apply the values
+
+Try it now using the supplied test data and the following command line:
+
+**MacOS**:
+
+```sh
+python3 drawiostyler.py -i testdata/input.drawio -o out/output.drawio -d testdata/data.csv
+```
+
+**Windows**:
+
+```cmd
+python drawiostyler.py -i testdata/input.drawio -o out/output.drawio -d testdata/data.csv
+```
 
 ## Prepare the Draw.io file for updating
 
@@ -45,10 +59,18 @@ An example of the Draw.io element that would have its content updated:
 
 Use the Python script to apply the CSV file to the input Draw.io file, to produce the output Draw.io file.
 
-Example command line (MacOS):
+Example command line:
+
+**MacOS**:
 
 ```sh
 python3 drawiostyler.py -i testdata/input.drawio -o out/output.drawio -d testdata/data.csv
+```
+
+**Windows**:
+
+```cmd
+python drawiostyler.py -i testdata/input.drawio -o out/output.drawio -d testdata/data.csv
 ```
 
 The arguments used by the script:
