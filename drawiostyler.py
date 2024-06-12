@@ -38,6 +38,7 @@
 import argparse
 import csv
 import xml.etree.ElementTree as ET
+import itertools
 
 def load_data(data_file):
     data = []
@@ -59,7 +60,7 @@ def save_drawio(drawio_file, root):
 def update_drawio(root, data):
     for row in data:
         rowkeys = { "id": True }
-        for object in root.iter("object"):
+        for object in itertools.chain(root.iter("object"), root.iter("UserObject")):
             if object.attrib["id"] == row["id"]:
                 for mxCell in object.iter("mxCell"):
                     style = mxCell.attrib.get("style")
